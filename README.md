@@ -2,9 +2,11 @@
 
 Functions that allow you to call a function not more than once in a given timeframe.
 
+This can be illustrated with timing diagrams. In the following diagrams, `f` designates call to the throttled function, `t` is the period where the timer is running, and `x` shows you the *actual* execution point of the throttled function.
+
 ## Throttling on the leading edge
 
-This can be illustrated with timing diagrams. In the following diagrams, `f` designates call to the throttled function, `t` is the period where the timer is running, and `x` shows you the *actual* execution point of the throttled function.
+Using the arguments of the *first* function call while the timer was running (the default).
 
 ```
 f 1  2  3  4  5  6
@@ -33,7 +35,7 @@ Its invocation and output will look something like this:
 
 ## Throttling on the trailing edge
 
-Using the arguments of the *first* function call while the timer was running (the default).
+Again, using the arguments of the *first* function call while the timer was running (the default).
 
 ```
 f 1  2  3    4  5  6
