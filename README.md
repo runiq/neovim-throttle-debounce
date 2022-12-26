@@ -20,7 +20,7 @@ You can use the `test_defer()` function from this module to show you an example 
 Its invocation and output will look something like this:
 
 ```vim
-:lua require'defer'.test_defer('tl')
+:lua require'throttle-debounce'.test_defer('tl')
 " tl: 1
 " 1
 " 2
@@ -42,7 +42,7 @@ x         1--        4--
 ```
 
 ```vim
-:lua require'defer'.test_defer('tt')`
+:lua require'throttle-debounce'.test_defer('tt')`
 " 1
 " 2
 " 3
@@ -62,7 +62,7 @@ x         3--        6--
 ```
 
 ```vim
-:lua require'defer'.test_defer('tt', true)`
+:lua require'throttle-debounce'.test_defer('tt', true)`
 " 1
 " 2
 " 3
@@ -83,7 +83,7 @@ t ---r--r--r--r--r-------
 x 1--
 ```
 ```vim
-:lua require'defer'.test_defer('dl')
+:lua require'throttle-debounce'.test_defer('dl')
 " dl: 1
 " 1
 " 2
@@ -105,7 +105,7 @@ x                        6--
 ```
 
 ```vim
-:lua require'defer'.test_defer('dt')
+:lua require'throttle-debounce'.test_defer('dt')
 " 1
 " 2
 " 3
@@ -125,7 +125,7 @@ x                        1--
 ```
 
 ```vim
-:lua require'defer'.test_defer('dt', true)
+:lua require'throttle-debounce'.test_defer('dt', true)
 " 1
 " 2
 " 3
