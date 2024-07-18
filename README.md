@@ -1,3 +1,5 @@
+**Update:** I'm not using Neovim any longer, so this is here mostly for posterity.
+
 # What are these?
 
 Functions that allow you to call a function not more than once in a given timeframe.
